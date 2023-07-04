@@ -47,10 +47,6 @@ Folgen Sie diesen Schritten, um das Krebs-Dashboard lokal auszuführen:
 
 Bitte beachten Sie, dass für die Ausführung des Dashboards Docker und Docker Compose nicht erforderlich sind. Diese Anleitung geht davon aus, dass Sie das Dashboard lokal ausführen möchten.
 
-## Beitragende
-
-Wir freuen uns über Beiträge zur Verbesserung des Krebs-Dashboards. Wenn Sie einen Fehler gefunden haben oder eine Verbesserung vorschlagen möchten, können Sie gerne einen Issue erstellen oder uns einen Pull-Request senden.
-
 ## Lizenz
 
 Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen finden Sie in der [Lizenzdatei](LICENSE) des Projekts.
