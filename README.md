@@ -11,8 +11,19 @@ Das Krebs-Dashboard wurde mit den folgenden Technologien entwickelt:
 - Pandas: Die Python-Bibliothek Pandas wurde genutzt, um die Daten aus der CSV-Datei zu laden und zu verarbeiten.
 - Docker: Docker wurde verwendet, um das Dashboard in einem isolierten Container auszuführen und die Abhängigkeiten zu verwalten.
 - Plotly Dash: Das Dashboard wurde mit Plotly Dash erstellt, einer Python-Bibliothek zur Erstellung interaktiver Webanwendungen.
-- GitHub: Das Projekt und alle zugehörigen Unterlagen sind auf GitHub unter dem folgenden Link verfügbar: [https://github.com/malikljajic/DSE_Projekt_SoSe2023.git](https://github.com/malikljajic/DSE_Projekt_SoSe2023.git).
+- GitHub: Git wurde als Versionskontrollsystem (VCS) genutzt, um das Projekt zu verwalten und die Zusammenarbeit zu ermöglichen. Das Projekt und alle zugehörigen Unterlagen sind auf GitHub unter dem folgenden Link verfügbar:
+  [https://github.com/malikljajic/DSE_Projekt_SoSe2023.git](https://github.com/malikljajic/DSE_Projekt_SoSe2023.git).
 
+## Projektmitglieder
+
+Das Projekt wird von folgenden Mitgliedern geleitet:
+
+- Arezu Wafa (GitHub-Benutzername: arwa9526)
+- Malik Ljajic (GitHub-Benutzername: malikljajic)
+
+## Projekt-Repository
+
+Das gesamte Projekt, einschließlich des Dashboards und der Unterlagen, ist im folgenden GitHub-Repository verfügbar: [https://github.com/malikljajic/DSE_Projekt_SoSe2023.git](https://github.com/malikljajic/DSE_Projekt_SoSe2023.git)
 ## Funktionen des Dashboards
 
 Das Krebs-Dashboard bietet folgende Funktionen:
