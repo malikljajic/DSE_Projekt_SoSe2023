@@ -11,6 +11,3 @@ fivelargestvalues = df.sort_values(by=['2008'])
 # Report anzeigen
 print(fivelargestvalues.head(5))
 
-
-a='Test für Commit bei der Session am 04.07.2023'
-print(a)

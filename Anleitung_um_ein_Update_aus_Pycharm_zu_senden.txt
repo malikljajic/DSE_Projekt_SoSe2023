@@ -1,41 +1,34 @@
 Dies ist eine selbst geschriebene Anleitung um in Pycharm das Git Repository aus Github zu updaten.
 
-Schritt 1: Öffne Pycharm
+Schritt  1: Öffne Pycharm
 
-Schritt 2: Schließe dein evtl. offenes Projekt unter File -> Close Project
+Schritt  2: Schließe dein evtl. offenes Projekt unter File -> Close Project
 
-Schritt 3: Clone das Projekt aus Github unter Open Project -> Get from VCS
+Schritt  3: Clone das Projekt aus Github unter Open Project -> Get from VCS
            Trage unter Git URL den Link zum Github Repository ein: https://github.com/malikljajic/DSE_Projekt_SoSe2023
 
-Schritt 4: Warte bis das Clonen erfolgreich beendet ist.
+Schritt  4: Warte bis das Clonen erfolgreich beendet ist.
 
-Schritt 5: Öffne das Projekt und das Terminal welches du unten auf der Leiste aktiveren kannst.
+Schritt  5: Öffne das Projekt und das Terminal welches du unten auf der Leiste aktiveren kannst.
 
-Schritt 6: Stelle sicher, dass du eine Verbindung zu dem GitHub-Repository hast und das Repository bereits als Remote hinzugefügt hast.
-           Überprüfe dies mit dem Befehl `git remote -v`, um die Remote-URLs anzuzeigen. Wenn "origin" bereits
-           auf die GitHub-URL (https://github.com/malikljajic/DSE_Projekt_SoSe2023) verweist,
-           kannst du mit Schritt 7 fortfahren. Andernfalls fahren Sie mit Schritt 8 fort.
+Schritt  6: Stelle sicher, dass du eine Verbindung zu dem GitHub-Repository hast und das Repository bereits als Remote hinzugefügt hast.
+            Überprüfe dies mit dem Befehl `git remote -v`, um die Remote-URLs anzuzeigen. Wenn "origin" bereits
+            auf die GitHub-URL (https://github.com/malikljajic/DSE_Projekt_SoSe2023) verweist,
+            kannst du mit Schritt 7 fortfahren. Andernfalls fahren Sie mit Schritt 8 fort.
 
-Schritt 7: Füge die GitHub-Repository-URL als Remote hinzu, indem du den Befehl `git remote add origin https://github.com/malikljajic/DSE_Projekt_SoSe2023` verwendest.
-
-
-Schritt 8:
+Schritt  7: Füge die GitHub-Repository-URL als Remote hinzu, indem du den Befehl `git remote add origin https://github.com/malikljajic/DSE_Projekt_SoSe2023` verwendest.
 
 
+Schritt  8: Führe den Befehl `git add .` aus, um alle Änderungen im aktuellen Verzeichnis für den Commit vorzubereiten.
+            Wenn du nur bestimmte Dateien hinzufügen möchtest, kannst du `git add <Dateiname>` verwenden, um spezifische Dateien hinzuzufügen.
+
+Schritt  9: Führe den Befehl `git commit -m "Commit-Nachricht"` aus, um die Änderungen zu committen. Ersetze `<Commit-Nachricht>` durch eine
+            aussagekräftige Beschreibung deiner Änderung. Nur dadurch können wir nachher einfacher die Historie nachverfolgen
+
+Schritt 10: Führe den Befehl `git push origin main` aus, um Ihre lokalen Änderungen auf GitHub zu pushen.
+
+Schritt 11: Der Befehl `git push` lädt deine lokalen Commits auf den entsprechenden Branch im GitHub-Repository hoch.
+            WICHTIG ! Stelle sicher, dass du die erforderlichen Berechtigungen hast, um auf das Repository zuzugreifen und Commits zu pushen.
+            Der Admin muss dir Rechte dazu geben und dich einladen.
 
 
-
-
-2.
-
-3. Führen Sie den Befehl `git add .` aus, um alle Änderungen im aktuellen Verzeichnis für den Commit vorzubereiten.
-Wenn Sie nur bestimmte Dateien hinzufügen möchten, können Sie `git add <Dateiname>` verwenden, um spezifische Dateien hinzuzufügen.
-
-4. Führen Sie den Befehl `git commit -m "Commit-Nachricht"` aus, um die Änderungen zu committen. Ersetzen Sie `<Commit-Nachricht>` durch eine
-aussagekräftige Beschreibung Ihrer Änderungen.
-
-5. Führen Sie den Befehl `git push origin <Branch-Name>` aus, um Ihre lokalen Änderungen auf GitHub zu pushen.
-Ersetzen Sie `<Branch-Name>` durch den Namen des Branches, auf den Sie pushen möchten. Standardmäßig ist der Hauptbranch "master" oder "main".
-
-Der Befehl `git push` lädt Ihre lokalen Commits auf den entsprechenden Branch im GitHub-Repository hoch.
-Stellen Sie sicher, dass Sie die erforderlichen Berechtigungen haben, um auf das Repository zuzugreifen und Commits zu pushen.
