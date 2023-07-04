@@ -1,0 +1,7 @@
+Dies ist eine selbst geschriebene Anleitung um in Pycharm das Git Repository aus Github zu updaten.
+
+Schritt 1: Öffne Pycharm
+
+Schritt 2: Schließe dein evtl. offenes Projekt unter File -> Close Project
+
+Schritt 3: Clone das Projekt aus Github unter Open Project -> from VCS
