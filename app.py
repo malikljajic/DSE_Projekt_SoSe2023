@@ -14,15 +14,6 @@ df = pd.read_csv('Datenbasis/Krebsdaten.csv', encoding="latin-1", sep=';', decim
 # Initialize the app
 app = dash.Dash(__name__)
 
-# Define CSS styles
-external_css = [
-    'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css',
-    'https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css',
-    {'href': 'styles.css', 'rel': 'stylesheet'}
-]
-for css in external_css:
-    app.css.append_css(css)
-
 # App layout
 app.layout = html.Div([
     html.H1('Krebsdashboard'),
@@ -38,9 +29,9 @@ app.layout = html.Div([
             id='sort-dropdown',
             options=[
                 {'label': 'Krebsart', 'value': 'Krebsart'},
-                {'label': 'Anzahl der F�lle', 'value': 'Anzahl der F�lle'},
-                {'label': 'Todesf�lle', 'value': 'Todesf�lle'},
-                {'label': '�berlebensrate', 'value': '�berlebensrate'}
+                {'label': 'Anzahl der Fälle', 'value': 'Anzahl der Fälle'},
+                {'label': 'Todesfälle', 'value': 'Todesfälle'},
+                {'label': 'Überlebensrate', 'value': 'Überlebensrate'}
             ],
             value='Krebsart',
             clearable=False
@@ -63,10 +54,9 @@ app.layout = html.Div([
     Output('datatable', 'data'),
     [Input('filter-input', 'value'), Input('sort-dropdown', 'value')]
 )
-def update_table(filter_value):
+def update_table(filter_value, sort_value):
     var = df[df['Krebsart'].str.contains(filter_value)]
     return var.to_dict('records')
 
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8051)
