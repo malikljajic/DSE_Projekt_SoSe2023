@@ -16,12 +16,8 @@ app = dash.Dash(__name__)
 
 # App layout
 app.layout = html.Div([
-    html.H1('Krebsdashboard'),
-
-    html.Div([
-        html.Label('Filter:'),
-        dcc.Input(id='filter-input', type='text', value='', placeholder='Enter filter'),
-    ]),
+    html.H1('Krebsdashboard Deutschland'),
+    html.H2('Zahlen pro 100 000 Einwohner'),
 
     html.Div([
         html.Label('Sort by:'),
@@ -29,9 +25,9 @@ app.layout = html.Div([
             id='sort-dropdown',
             options=[
                 {'label': 'Krebsart', 'value': 'Krebsart'},
-                {'label': 'Anzahl der Fälle', 'value': 'Anzahl der Fälle'},
-                {'label': 'Todesfälle', 'value': 'Todesfälle'},
-                {'label': 'Überlebensrate', 'value': 'Überlebensrate'}
+                {'label': 'Alter', 'value': 'Alter'},
+                {'label': 'Jahr', 'value': 'Jahr'},
+                {'label': 'Geschlecht', 'value': 'Geschlecht'}
             ],
             value='Krebsart',
             clearable=False
@@ -42,7 +38,7 @@ app.layout = html.Div([
         id='datatable',
         data=df.to_dict('records'),
         columns=[{'name': col, 'id': col} for col in df.columns],
-        page_size=10,
+        page_size=5,
     ),
 
     dcc.Graph(id='graph')
