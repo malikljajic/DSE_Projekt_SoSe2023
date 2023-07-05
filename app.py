@@ -16,8 +16,12 @@ app = dash.Dash(__name__)
 
 # App layout
 app.layout = html.Div([
-    html.H1('Krebsdashboard Deutschland'),
-    html.H2('Zahlen pro 100 000 Einwohner'),
+    html.H1('Krebsdashboard'),
+
+    html.Div([
+        html.Label('Filter:'),
+        dcc.Input(id='filter-input', type='text', value='', placeholder='Enter filter'),
+    ]),
 
     html.Div([
         html.Label('Sort by:'),
@@ -25,9 +29,9 @@ app.layout = html.Div([
             id='sort-dropdown',
             options=[
                 {'label': 'Krebsart', 'value': 'Krebsart'},
-                {'label': 'Alter', 'value': 'Alter'},
-                {'label': 'Jahr', 'value': 'Jahr'},
-                {'label': 'Geschlecht', 'value': 'Geschlecht'}
+                {'label': 'Anzahl der Fälle', 'value': 'Anzahl der Fälle'},
+                {'label': 'Todesfälle', 'value': 'Todesfälle'},
+                {'label': 'Überlebensrate', 'value': 'Überlebensrate'}
             ],
             value='Krebsart',
             clearable=False
@@ -38,7 +42,7 @@ app.layout = html.Div([
         id='datatable',
         data=df.to_dict('records'),
         columns=[{'name': col, 'id': col} for col in df.columns],
-        page_size=5,
+        page_size=10,
     ),
 
     dcc.Graph(id='graph')
@@ -55,4 +59,4 @@ def update_table(filter_value, sort_value):
     return var.to_dict('records')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8051)
+    app.run(debug=True, port=8053)
