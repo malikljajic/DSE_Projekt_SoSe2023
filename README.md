@@ -54,7 +54,7 @@ Folgen Sie diesen Schritten, um das Krebs-Dashboard lokal auszuführen:
 5. Aktivieren Sie die virtuelle Umgebung (optional): `source venv/bin/activate`.
 6. Installieren Sie die erforderlichen Abhängigkeiten: `pip install -r requirements.txt`.
 7. Führen Sie das Dashboard aus: `python app.py`.
-8. Öffnen Sie einen Webbrowser und gehen Sie zur URL `http://localhost:8050`, um das Krebs-Dashboard anzuzeigen.
+8. Öffnen Sie einen Webbrowser und gehen Sie zur URL `http://localhost:8051`, um das Krebs-Dashboard anzuzeigen.
 
 Bitte beachten Sie, dass für die Ausführung des Dashboards Docker und Docker Compose nicht erforderlich sind. Diese Anleitung geht davon aus, dass Sie das Dashboard lokal ausführen möchten.
 
